@@ -1,42 +1,39 @@
-# Xindus Assignment: Wishlist Management Backend
-Welcome to the Xindus Assignment repository! This backend application serves as the backend solution for managing wishlists in an e-commerce platform. The application is built using Spring Boot, Spring Security with JWT authentication, and Spring Data JPA.
+# Xindus Wishlist Management Project
+This backend application serves as the backend solution for managing wishlists in an e-commerce platform. The application is built using Spring Boot, Spring Security with JWT authentication, and Spring Data JPA.
 
 ## Features
-- User Authentication: Secure signup and login functionality using Spring Security with JWT authentication.
-- Wishlist Management: RESTful API endpoints for managing user wishlists, including creation and deletion of wishlist items.
-- Database Integration: Integration with a relational database using Spring Data JPA for storing user information and wishlist items.
+- User Authentication using Spring Security with JWT authentication.
+- Wishlist Management for managing user wishlists, including creation and deletion of wishlist items.
+- Database Integration with a relational database using Spring Data JPA for storing user information and wishlist items.
 
 ## Setup and Usage
 
-### Prerequisites
+## Prerequisites
 - Java Development Kit (JDK) version 8 or higher
 - Maven
  
-### Installation
+### Install
 Step1:- Clone the repository to your local machine:
-- git clone https://github.com/moinkhan07/Xindus_Assignment.git
+- git clone https://github.com/narry581/XindusAssignment.git
 
-Step2:- Navigate to the project directory:
-- cd XindusWishlistManagement
+Step2:- cd XindusAssignment
 
-Step3:- Build the project using Maven:
-- mvn clean install
+Step3:- mvn clean install
 
-### Configuration
-Step1:- Database Configuration:
+## Configuration
+
 - Open the src/main/resources/application.properties file.
 - Configure your database connection settings:
   - spring.datasource.url=jdbc:mysql://localhost:3306/wishlistmanagement
   - spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
   - spring.datasource.username=root
-  - spring.datasource.password=root
+  - spring.datasource.password=7382612798
   
 Step2:- Spring Security Configuration:
 - Customize security settings, such as JWT token expiration time and secret key, in the SecurityConfig.java file.
 
-### Running the Application
-1. Run the application using Maven:
-- mvn spring-boot:run
+### Run the Application
+1. - mvn spring-boot:run
 
 2. The application will start on the default port 8080.
 
@@ -67,5 +64,5 @@ Step2:- Spring Security Configuration:
      - Wishlist Management: http://localhost:8080/api/wishlists
      - Products: http://localhost:8080/api/products
 
-
-Thank you for exploring the Xindus Assignment backend repository! We hope this documentation provides clear guidance on setting up, configuring, and using the application.
+ We hope this documentation has a clear guidance on setting up, configuring, and running the application.
+Thank you
