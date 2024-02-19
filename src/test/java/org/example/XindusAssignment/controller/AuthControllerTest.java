@@ -66,8 +66,8 @@ class AuthControllerTest {
                 .thenReturn(new TestingAuthenticationToken("Principal", "Credentials"));
 
         JwtRequest jwtRequest = new JwtRequest();
-        jwtRequest.setUserEmail("jane.doe@example.org");
-        jwtRequest.setUserPassword("iloveyou");
+        jwtRequest.setUserEmail("narry.g@example.org");
+        jwtRequest.setUserPassword("testpassword");
         String content = (new ObjectMapper()).writeValueAsString(jwtRequest);
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/auth/login")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -94,8 +94,8 @@ class AuthControllerTest {
                 .thenThrow(new BadCredentialsException("passed"));
 
         JwtRequest jwtRequest = new JwtRequest();
-        jwtRequest.setUserEmail("jane.doe@example.org");
-        jwtRequest.setUserPassword("iloveyou");
+        jwtRequest.setUserEmail("narry@sampletest.org");
+        jwtRequest.setUserPassword("testpassword");
         String content = (new ObjectMapper()).writeValueAsString(jwtRequest);
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/auth/login")
                 .contentType(MediaType.APPLICATION_JSON)
