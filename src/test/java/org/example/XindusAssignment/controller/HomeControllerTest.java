@@ -66,11 +66,11 @@ class HomeControllerTest {
         when(productService.addItem(Mockito.<Product>any())).thenReturn("Add Item");
 
         User user = new User();
-        user.setUserEmail("jane.doe@example.org");
+        user.setUserEmail("narry@testexample.org");
         user.setUserId(1);
-        user.setUserName("janedoe");
-        user.setUserPassword("iloveyou");
-        user.setUserPhoneNumber("6625550144");
+        user.setUserName("narry");
+        user.setUserPassword("testpassword");
+        user.setUserPhoneNumber("7382612798");
 
         Product product = new Product();
         product.setProductId(1);
@@ -99,11 +99,11 @@ class HomeControllerTest {
         when(userService.addUser(Mockito.<User>any())).thenReturn("Add User");
 
         User user = new User();
-        user.setUserEmail("jane.doe@example.org");
+        user.setUserEmail("narry@testexample.org");
         user.setUserId(1);
-        user.setUserName("janedoe");
-        user.setUserPassword("iloveyou");
-        user.setUserPhoneNumber("6625550144");
+        user.setUserName("narry");
+        user.setUserPassword("testpassword");
+        user.setUserPhoneNumber("7382612798");
         String content = (new ObjectMapper()).writeValueAsString(user);
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.post("/api/addUser")
                 .contentType(MediaType.APPLICATION_JSON)
